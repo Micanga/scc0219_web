@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Lista de BLOGS</h1>
+  {% if blog_list %}
+  <ul>
+    {% for blog in blog_list %}
+      <li>
+        <a href="{{ blog.get_absolute_url }}">{{ blog.title }}</a> 
+        ({{blog.date}}) -- <a href="{{blog.author.get_absolute_url}}">{{blog.author}}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>Ainda não temos blogs adicionados.</p>
+  {% endif %}       
+{% endblock %}

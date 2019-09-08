@@ -1,0 +1,222 @@
+/* || General setup */
+html {
+  background-color: #dfdfdf;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main {
+  background-color: white;
+  display: flex;
+}
+
+/* || typography */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  font-size: 300%;
+  text-align: center;
+  text-shadow: grey -2px 3px 2px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
+  text-align: center;
+  padding: 15px 15px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+  margin: 15px 40px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #525252;
+  font-size: 100%;
+  text-align: justify;
+  margin: 15px 40px;
+}
+
+.main-navigation{
+} 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 65px;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+
+}
+
+li a:hover {
+  background-color: #afafaf;
+  border-bottom: 1px solid black;
+}
+
+li.search{
+  float:right;
+  padding: 14px 16px;
+}
+
+button.submit {
+  color: #ffffff;
+  border-color: #000000;
+  background: #000000;
+}
+
+button.submit:hover {
+  color: #000000;
+  border-color: #ffffff;
+  background: #ffffff;
+}
+
+table {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 3%;
+  background-color: #9f9f9f;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 1%;
+}
+
+td {
+  text-align: center;
+}
+
+th[scope="col"] {
+  border-bottom: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #cfcfcf;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #bfbfbf;
+}
+
+caption {
+  color: #222222;
+  font-size: 100%;
+  margin: 1% 1%;
+}
+
+img, audio {
+  display: block;
+  margin: 0 auto;
+}
+
+.controls {
+  display: block;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+}
+
+.time {
+  margin: 1%;
+}
+
+.secundary {
+  flex: 2;
+  background: #dfdfdf;
+  padding: 5%;
+}
+
+.comments {
+  background-color: #cfcfcf;
+  padding: 1%;
+  width: 80%;
+  display: block;
+  margin: 2% auto;
+}
+
+.show-hide {
+  cursor: pointer;
+}
+
+.comments h2 {
+  font-size: 2rem;
+}
+
+.comments h2:nth-of-type(2) {
+  margin-bottom: 0;
+}
+
+.comment-form {
+  margin-bottom: 3rem;
+}
+
+.comment-form .flex-pair {
+  display: flex;
+  font-size: 150%;
+  padding: 0 3rem 1rem;
+}
+
+.comment-form input, .comment-form label, .show-hide {
+  font-size: 1.6rem;
+  height: 32px;
+  margin: 1%;
+}
+
+.comment-form input[type="submit"], .show-hide {
+  background: #333;
+  border: 0;
+  margin: 1%;
+  color: white;
+}
+
+.comment-form input[type="submit"] {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+.comment-container {
+  margin-top: 0;
+}
+
+.comment-container li {
+  list-style-type: none;
+  display: flex;
+}
+
+.comment-container li p:nth-child(1) {
+  flex: 1;
+  font-weight: bold;
+}
+
+.comment-container li p:nth-child(2) {
+  flex: 5;
+}
+
+footer {
+  background-color: white;
+  padding: 1%;
+  margin-bottom: 1%;
+  border-top: 1px solid #000000;
+}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Steven Universo Blog</h1>
+  <p>Bem vindo ao blog do Steven, aqui podemos discutir nossas vidas e falar sobre amigos!</p>
+  <h2>Atividades</h2>
+  <p>As atividades registradas no site do steven sao as seguintes:</p>
+  <ul>
+    <li><strong>Usuarios:</strong> {{ num_users }}</li>
+    <li><strong>Blogs:</strong> {{ num_blogs }}</li>
+    <li><strong>Autores:</strong> {{ num_authors }}</li>
+  </ul>
+{% endblock %}

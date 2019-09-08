@@ -1,0 +1,27 @@
+  {
+    "name": "Vovó Juju Busca Extension",
+    "version": "1.0",
+    "description": "Ta com preguiça de buscar algo na internet? Come um abacate enquanto eu procuro para você, faz bem pro cabelo.",
+    "permissions": ["activeTab","declarativeContent","storage"],
+    "content_security_policy": "script-src 'self' https://example.com; object-src 'self'",
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/juju16.png",
+        "32": "images/juju32.png",
+        "48": "images/juju48.png",
+        "128": "images/juju128.png"
+      }
+    },
+    "icons": {
+      "16": "images/juju16.png",
+      "32": "images/juju32.png",
+      "48": "images/juju48.png",
+      "128": "images/juju128.png"
+    },
+    "manifest_version": 2
+  }
